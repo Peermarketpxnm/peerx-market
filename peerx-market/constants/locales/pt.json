@@ -1,0 +1,20 @@
+{
+  "walletBalance": "Saldo da Carteira",
+  "connectWallet": "Conectar Carteira",
+  "recentTransactions": "Transações Recentes",
+  "marketplace": "Marketplace",
+  "wallet": "Carteira",
+  "settings": "Configurações",
+  "address": "Endereço",
+  "deliveryAddress": "Endereço de Entrega",
+  "enterAddress": "Digite seu endereço",
+  "noTransactions": "Nenhuma transação recente",
+  "connect": "Conectar",
+  "addProduct": "Adicionar Produto",
+  "changeLanguage": "Trocar idioma",
+  "walletConnected": "Carteira conectada",
+  "disconnect": "Desconectar",
+  "productName": "Nome do produto",
+  "productPrice": "Preço do produto",
+  "balance": "Balanço"
+}

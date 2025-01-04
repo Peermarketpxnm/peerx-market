@@ -1,0 +1,20 @@
+{
+  "walletBalance": "Wallet Balance",
+  "connectWallet": "Connect Wallet",
+  "recentTransactions": "Recent Transactions",
+  "marketplace": "Marketplace",
+  "wallet": "Wallet",
+  "settings": "Settings",
+  "address": "Address",
+  "deliveryAddress": "Delivery Address",
+  "enterAddress": "Enter your address",
+  "noTransactions": "No recent transactions",
+  "connect": "Connect",
+  "addProduct": "Add Product",
+  "changeLanguage": "Change Language",
+  "walletConnected": "Wallet Connected",
+  "disconnect": "Disconnect",
+  "productName": "Product Name",
+  "productPrice": "Product price",
+  "balance": "Balance"
+}
