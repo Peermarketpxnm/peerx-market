@@ -1,8 +1,16 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from "react-native";
-import { create as ipfsHttpClient } from "ipfs-http-client";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StyleSheet,
+  Image,
+} from "react-native";
 
-const client = ipfsHttpClient({ url: "https://ipfs.infura.io:5001/api/v0" });
+import { create } from "kubo-rpc-client";
+
+const ipfs = create({ url: "https://ipfs.infura.io:5001/api/v0" });
 
 function DecentralizedStorageApp() {
   const [image, setImage] = useState(null);
@@ -13,10 +21,12 @@ function DecentralizedStorageApp() {
     try {
       // Simulate image upload (replace this with file picker in a real app)
       const imageData = "Sample Image Data"; // Replace with actual file data
-      const imageResult = await client.add(imageData);
-      const descriptionResult = await client.add(description);
+      const imageResult = await ipfs.add(imageData);
+      const descriptionResult = await ipfs.add(description);
 
-      setIpfsHash(`Image CID: ${imageResult.path}, Description CID: ${descriptionResult.path}`);
+      setIpfsHash(
+        `Image CID: ${imageResult.path}, Description CID: ${descriptionResult.path}`
+      );
     } catch (err) {
       console.error("IPFS upload failed:", err);
     }
