@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PeerX Market
 
-## Getting Started
+Um marketplace descentralizado para compras e vendas online utilizando criptomoedas (PXNM, USDC e DAI).
 
-First, run the development server:
+## 🚀 Recursos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Interface minimalista e intuitiva
+- Suporte a Dark Mode e Light Mode
+- Login com carteira Web3 (MetaMask, Trust Wallet, Phantom, WalletConnect)
+- Listagem de produtos e serviços
+- Sistema de avaliações e reputação
+- Smart contracts para segurança e transparência nas transações
+- Integração com PXNM, USDC e DAI nas redes Ethereum e Solana
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tecnologias
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Backend**: Firebase/Firestore
+- **Blockchain**: Ethereum, Solidity
+- **Armazenamento**: IPFS
+- **Carteiras**: Web3, WalletConnect
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📋 Pré-requisitos
 
-## Learn More
+- Node.js 14.x ou superior
+- NPM ou Yarn
+- Conta no Firebase
+- Conta na Infura (para WalletConnect)
+- MetaMask ou outra carteira Web3 para testes
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Instalação
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/peerx-market.git
+   cd peerx-market
+   ```
