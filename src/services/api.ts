@@ -84,29 +84,25 @@ export const getMarketplaceListings = async (
   await new Promise((resolve) => setTimeout(resolve, 800));
 
   // Dados simulados
-  const products = Array(limit).fill(
-    (i) => ({
-      id: `prod${i + 100}`,
-      title: `Produto ${i + 1}`,
-      description: "Descrição breve do produto...",
-      price: Math.floor(Math.random() * 300) + 50,
-      currency: ["PXNM", "USDC", "DAI"][Math.floor(Math.random() * 3)],
-      category: ["Eletrônicos", "Roupas", "Casa", "Colecionáveis"][
-        Math.floor(Math.random() * 4)
-      ],
-      image: "https://via.placeholder.com/200",
-      seller: {
-        id: `seller${i + 100}`,
-        username: `Vendedor${i + 1}`,
-        rating: (Math.random() * 2 + 3).toFixed(1),
-      },
-      createdAt: new Date(
-        Date.now() - Math.floor(Math.random() * 30) * 24 * 60 * 60 * 1000
-      ),
-    }),
-    1,
-    10
-  );
+  const products = Array.from({ length: limit }, (_, i) => ({
+    id: `prod${i + 100}`,
+    title: `Produto ${i + 1}`,
+    description: "Descrição breve do produto...",
+    price: Math.floor(Math.random() * 300) + 50,
+    currency: ["PXNM", "USDC", "DAI"][Math.floor(Math.random() * 3)],
+    category: ["Eletrônicos", "Roupas", "Casa", "Colecionáveis"][
+      Math.floor(Math.random() * 4)
+    ],
+    image: "https://via.placeholder.com/200",
+    seller: {
+      id: `seller${i + 100}`,
+      username: `Vendedor${i + 1}`,
+      rating: (Math.random() * 2 + 3).toFixed(1),
+    },
+    createdAt: new Date(
+      Date.now() - Math.floor(Math.random() * 30) * 24 * 60 * 60 * 1000
+    ),
+  }));
 
   return {
     products,
@@ -136,21 +132,17 @@ export const getTokenBalances = async (address: string) => {
 
 // Obter produtos em destaque
 export const getFeaturedProducts = async (limit = 6) => {
-  // Em produção, aqui você faria uma chamada HTTP para a API
+  // Simulação de atraso (exemplo de requisição à API)
   await new Promise((resolve) => setTimeout(resolve, 500));
 
-  // Dados simulados
-  return Array(limit).fill(
-    (i) => ({
-      id: `featured${i + 100}`,
-      title: `Produto Destaque ${i + 1}`,
-      price: Math.floor(Math.random() * 300) + 50,
-      currency: ["PXNM", "USDC", "DAI"][Math.floor(Math.random() * 3)],
-      image: "https://via.placeholder.com/300x200",
-      rating: (Math.random() * 1.5 + 3.5).toFixed(1),
-      reviewCount: Math.floor(Math.random() * 50) + 5,
-    }),
-    1,
-    10
-  );
+  // Retorna um array de objetos, gerado corretamente
+  return Array.from({ length: limit }, (_, i) => ({
+    id: `featured${i + 100}`,
+    title: `Produto Destaque ${i + 1}`,
+    price: Math.floor(Math.random() * 300) + 50,
+    currency: ["PXNM", "USDC", "DAI"][Math.floor(Math.random() * 3)],
+    image: "https://via.placeholder.com/300x200",
+    rating: (Math.random() * 1.5 + 3.5).toFixed(1),
+    reviewCount: Math.floor(Math.random() * 50) + 5,
+  }));
 };
