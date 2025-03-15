@@ -92,10 +92,10 @@ const Layout = ({ children }) => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className={`p-2 rounded-full ${
+              className={`px-1 rounded-full ${
                 isDarkMode
                   ? "bg-gray-700 text-yellow-400"
-                  : "bg-gray-100 text-gray-600"
+                  : "bg-gray-700 text-gray-600"
               }`}
               aria-label="Toggle theme"
             >
@@ -103,7 +103,7 @@ const Layout = ({ children }) => {
             </button>
 
             {/* Wallet Button */}
-            {isConnected ? (
+            {!isConnected ? (
               <div className="relative">
                 <button
                   onClick={() => setIsProfileMenuOpen(!isProfileMenuOpen)}

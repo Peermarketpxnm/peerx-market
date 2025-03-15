@@ -18,9 +18,9 @@ export const getProductById = async (id) => {
     category: "Eletrônicos",
     condition: "Novo",
     images: [
-      "https://via.placeholder.com/500",
-      "https://via.placeholder.com/500?text=Image+2",
-      "https://via.placeholder.com/500?text=Image+3",
+      "https://placehold.co/600x400/png",
+      "https://placehold.co/600x400/png",
+      "https://placehold.co/600x400/png",
     ],
     seller: {
       id: "seller123",
@@ -49,7 +49,7 @@ export const getSimilarProducts = async (category, limit = 3) => {
       title: "Fones de Ouvido Wireless",
       price: 45,
       currency: "PXNM",
-      image: "https://via.placeholder.com/200",
+      image: "https://placehold.co/600x400/000000/FFF",
       rating: 4.5,
       reviewCount: 18,
     },
@@ -58,7 +58,7 @@ export const getSimilarProducts = async (category, limit = 3) => {
       title: "Headset Gamer",
       price: 65,
       currency: "USDC",
-      image: "https://via.placeholder.com/200",
+      image: "https://placehold.co/600x400/000000/FFF",
       rating: 4.7,
       reviewCount: 32,
     },
@@ -67,7 +67,7 @@ export const getSimilarProducts = async (category, limit = 3) => {
       title: "Monitores de Estúdio",
       price: 120,
       currency: "DAI",
-      image: "https://via.placeholder.com/200",
+      image: "https://placehold.co/600x400/000000/FFF",
       rating: 4.9,
       reviewCount: 12,
     },
@@ -93,7 +93,7 @@ export const getMarketplaceListings = async (
     category: ["Eletrônicos", "Roupas", "Casa", "Colecionáveis"][
       Math.floor(Math.random() * 4)
     ],
-    image: "https://via.placeholder.com/200",
+    image: "https://placehold.co/600x400/000000/FFF",
     seller: {
       id: `seller${i + 100}`,
       username: `Vendedor${i + 1}`,
@@ -141,7 +141,7 @@ export const getFeaturedProducts = async (limit = 6) => {
     title: `Produto Destaque ${i + 1}`,
     price: Math.floor(Math.random() * 300) + 50,
     currency: ["PXNM", "USDC", "DAI"][Math.floor(Math.random() * 3)],
-    image: "https://via.placeholder.com/300x200",
+    image: "https://placehold.co/600x400/000000/FFF",
     rating: (Math.random() * 1.5 + 3.5).toFixed(1),
     reviewCount: Math.floor(Math.random() * 50) + 5,
   }));

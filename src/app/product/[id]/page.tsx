@@ -370,7 +370,7 @@ export default function ProductPage() {
             <div className="flex space-x-4 mb-6">
               <Button
                 onClick={handleBuyNow}
-                className="flex-1 bg-primary text-white py-3 rounded-lg font-medium"
+                className="flex-1 bg-primary text-white py-3 rounded-lg font-medium bg-green-600"
               >
                 Comprar Agora
               </Button>
@@ -384,7 +384,7 @@ export default function ProductPage() {
                       : "bg-gray-800 text-white"
                     : isFavorite
                     ? "bg-gray-100 text-gray-800"
-                    : "bg-white text-gray-800 border border-gray-200"
+                    : "bg-white text-gray-800 border border-gray-400"
                 }`}
               >
                 {isFavorite ? "❤️ Salvo" : "♡ Salvar"}

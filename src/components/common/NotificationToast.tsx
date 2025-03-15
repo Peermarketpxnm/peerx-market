@@ -90,7 +90,7 @@ const NotificationToast = ({
     >
       <div className="flex items-center p-4">
         <div
-          className={`flex-shrink-0 rounded-full p-2 ${typeStyles.iconBg} text-white`}
+          className={`flex-shrink-0 rounded-full ${typeStyles.text}  text-white`}
         >
           {typeStyles.icon}
         </div>

@@ -7,7 +7,12 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["via.placeholder.com", "ipfs.io", "ipfs.infura.io"],
+    domains: [
+      "via.placeholder.com",
+      "ipfs.io",
+      "ipfs.infura.io",
+      "placehold.co",
+    ],
   },
   env: {
     NEXT_PUBLIC_ETHEREUM_NETWORK:
